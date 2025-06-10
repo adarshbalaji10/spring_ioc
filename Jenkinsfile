@@ -5,13 +5,13 @@ pipeline {
   }
   stages {
     stage("clean"){
-      step{
+      steps{
         sh 'mvn clean'
       }
     }
   
     stage("compile"){
-      step{
+      steps{
         sh 'mvn compile'
       }
     }  
